@@ -1,0 +1,16 @@
+#Terminal 1
+roslaunch hsrb_gazebo_launch ashik_world.launch
+
+
+#check code to make changes to aruco marker/-
+#	In real robot the aruco marker used is /ar_marker 6
+#	In simulation the aruco marker used is /ar_marker 4000
+
+#Terminal 2
+#real robot
+hsrb_mode
+python3 handover_hsr.py
+
+#simulation
+sim_mode
+python3 handover_hsr.py
